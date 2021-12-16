@@ -1,9 +1,9 @@
 # v2board-mining
 
 <span id="v2board-classify"></span>
-## v2board 站点搜集
+## v2board Pattern
 
-### 无阻碍（normal）
+### 无阻碍（Normal）
 
 > Definition：邮箱（无论是否限定域名 无需验证），密码，重述密码，邀请码（选填），点击注册
 
@@ -13,12 +13,12 @@
 - [萌喵加速-Nirvana](https://portal.meomiao.xyz/#/dashboard) 1day 2G
 - [云上极速](https://yunshang.uk//#/dashboard) 1day 1G
 
-### 邮箱验证（diy）
+### 邮箱验证（Diy）
 
 > Definition：自定义邮箱（需要验证），发送验证码，填写验证码，密码，重述密码，邀请码（选填），勾选服务条款，点击注册
 - [SNOW](https://www.onsnow.net/#/dashboard) 1G 每16日重置
 
-### 邮箱验证（limit）
+### 邮箱验证（Limit）
 
 > Definition：区别仅在限定了邮箱域名（仍需验证）。
 
@@ -40,16 +40,12 @@
 > Definition：额外捆绑其他人机验证方案，如 GeeTest滑动验证，Google RECAPTCHA
 > 点击发送验证码/注册，弹出人机验证
 
-- [PandaCloud！ (xxm.buzz)](https://www.xxm.buzz/#/register)
+- [PandaCloud](https://www.xxm.buzz/#/register)
   点击发送邮箱验证码后，弹出 Google RECAPTCHA
 
-## v2board-action 定义
+## v2board Actions
 
-**方法论1：**实例注册，订阅缓存，订阅辐射
-**方法论2：**实例发现，实例标注，实例筛选
-**方法论3：**订阅分发（Clash 联动）
-
-### 方法论1
+### 实例注册，订阅缓存，订阅辐射
 
 1. 实例注册
     沿用 selenium 设计方案，实现注册行为链。
@@ -59,7 +55,7 @@
 3. 订阅辐射
     沿用 redis 设计方案，实现订阅辐射。
 
-### 方法论2
+### 实例发现，实例标注，实例筛选
 
 1. 实例发现
     参照 [v2board-classify](#v2board-classify) 区分广义对象实例。
@@ -71,13 +67,12 @@
       - 毒药测速
 
 2. 实例标注
-3. 实力筛选
+3. 实例筛选
 
-### 方法论3
+### 订阅分发
 
-沿用 easygui 设计方案，实现订阅分发。
+沿用 easygui 设计方案，实现订阅分发（Clash 联动）。
 
 - 用户点击「一键导入 Clash」，触发 「redis 原子取」指令，获取「Clash Url-Scheme」
 - 使用默认浏览器访问「Clash Url-Scheme」实现 Clash-Yaml 的自动导入
-
 

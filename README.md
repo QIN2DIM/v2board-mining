@@ -1,12 +1,12 @@
-# v2board-mining
+# V2board Mining
 
 <span id="v2board-classify"></span>
 
-## v2board Pattern
+## V2board Pattern
 
 ### 无阻碍（Normal）
 
-> Definition：邮箱（无论是否限定域名 无需验证），密码，重述密码，邀请码（选填），点击注册
+> Definition：邮箱（无验证），密码，重述密码，点击注册
 
 - [河豚](https://hetun.online/#/register) 3H 20GB
 - [话啦啦](https://v2ssy.xyz/#/dashboard) not free
@@ -14,9 +14,9 @@
 - [萌喵加速-Nirvana](https://portal.meomiao.xyz/#/dashboard) 1D 2GB
 - [云上极速](https://yunshang.uk//#/dashboard) 1D 1GB
 
-### 邮箱验证（Diy）
+### 邮箱验证（Custom）
 
-> Definition：自定义邮箱（需要验证），发送验证码，填写验证码，密码，重述密码，邀请码（选填），勾选服务条款，点击注册
+> Definition：自定义邮箱（需要验证），发送验证码，填写验证码，密码，重述密码，点击注册
 
 - [SNOW](https://www.onsnow.net/#/dashboard) 1D 1GB
 - [玛瑙云](https://manaocloud.xyz/#/register) 3D 2GB
@@ -24,7 +24,7 @@
 
 ### 邮箱验证（Limit）
 
-> Definition：区别仅在限定了邮箱域名（仍需验证）。
+> Definition：要求使用主流的邮箱域名。
 
 - [VNStark-薇恩](https://vnstark.com/#/register)
 - [sp-ss](https://dash.sp333.top/#/register) 永久 10G 下单
@@ -41,13 +41,13 @@
 
 ### 高级验证（Attention）
 
-> Definition：点击发送邮箱验证码以及注册按钮后，弹出 Google reCAPTCHA
+> Definition：发送邮箱验证码以及点击注册后弹出 `Google reCAPTCHA`
 
 - [PandaCloud](https://www.xxm.buzz/#/register) 2H 3GB
   
   
 
-## v2board Actions
+## V2board Actions
 
 ### 实例注册，订阅缓存，订阅辐射
 
@@ -63,10 +63,10 @@
 
 1. 实例发现
    参照 [v2board-classify](#v2board-classify) 区分广义对象实例。
-   - [√] 使用搜索引擎搜索 HTML/JavaScript 站源代码（暂行）
+   - [√] 使用 HTML / JavaScript 源代码搜索（漏检）
    - [×] 使用 Google 关联搜索（不可靠）
    - [×] 搜集 BBS 共享（过时风险，不可信）
-   - [√] 搜集/监听 Channel 共享（可靠，需过滤）
+   - [√] 搜集/监听 Channel 共享（可靠，需去重）
      - 品云测速
      - 毒药测速
 
